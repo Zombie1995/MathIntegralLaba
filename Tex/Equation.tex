@@ -1,0 +1,134 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{accsupp}
+\usepackage{listings}
+\usepackage[unicode, colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\newcommand{\noncopynumber}[1]{%
+    \BeginAccSupp{method=escape,ActualText={}}%
+    #1%
+    \EndAccSupp{}%
+}
+\lstdefinestyle{mycodestyle}{
+    frame=single,
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numbers=left,
+    numberstyle=\color{codegray},
+    breaklines=true,
+    basicstyle=\ttfamily,
+    breakatwhitespace=false,
+    captionpos=b,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    columns=fullflexible,
+    numberstyle=\noncopynumber,
+    language=C++,
+    alsolanguage=PHP
+}
+\lstset{style=mycodestyle}
+
+\geometry{left=10mm}
+\geometry{right=10mm}
+\geometry{top=10mm}
+\geometry{bottom=20mm}
+
+\graphicspath{{img/}}
+
+\title{\textbf{Лабораторная работа}}
+\author{Кербер Егор}
+\date{\today}
+
+\begin{document}
+\maketitle
+%\begin{titlepage}
+%    \centering
+%    \par
+%    \vspace{50mm}
+%    {\scshape\Large State University\par}
+%    \vspace{10mm}
+%    {\scshape\Large Final year project\par}
+%    \vspace{15mm}
+%    {\huge\bfseries Pigeons love doves\par}
+%    \vspace{20mm}
+%    {\Large\itshape John Birdwatch\par}
+%    \vfill
+%    supervised by\par
+%    Dr. Mark Brown
+%    \vfill
+%    {\large \today\par}
+%    \vspace{20mm}
+%\end{titlepage}
+%Text starts here
+
+\tableofcontents
+\section*{Цели}
+\begin{enumerate}
+    \item Доказать существование интеграла
+    \item Сделать программу, рисующую и вычисляющую интегральные суммы
+    \item Расчитать погрешность
+\end{enumerate}
+\newpage
+\section{Ход работы}
+\subsection{Программа}
+\begin{center}
+    \includegraphics[width=0.35\linewidth]{1}
+\end{center}
+\begin{center}
+    \includegraphics[width=0.35\linewidth]{2}
+\end{center}
+\begin{center}
+    \includegraphics[width=0.35\linewidth]{3}
+\end{center}
+\begin{center}
+    \includegraphics[width=0.35\linewidth]{4}
+\end{center}
+\newpage
+\subsection{Доказательство существования интеграла}
+\begin{equation}
+    f=e^{2x}, x\in[0,1]
+\end{equation}
+\\
+\\
+\begin{equation}
+    \begin{gathered}
+        x_k= {k\over n}, k\in N \\
+        \overline{S} = \sum\limits_{k=1}^{n} e^{2\frac{k}{n}} \frac{1}{n} = \frac{1}{n} {e^{2\frac{1}{n}} {{1 - e^2} \over {1 - e^{\frac{2}{n}}}}} \underset{n \to \infty}{\longrightarrow} \frac{1}{n} {{1 - e^2} \over -{\frac{2}{n}}} = \frac{e^2}{2} - \frac{1}{2}
+    \end{gathered}
+\end{equation}
+\\
+\\
+\begin{equation}
+    \begin{gathered}
+        x_k= {{k - 1}\over n}, k\in N \\
+        \underline{S} = \sum\limits_{k=1}^{n} e^{2\frac{k - 1}{n}} \frac{1}{n} = \frac{1}{n} {{1 - e^2} \over {1 - e^{\frac{2}{n}}}} \underset{n \to \infty}{\longrightarrow} \frac{1}{n} {{1 - e^2} \over -{\frac{2}{n}}} = \frac{e^2}{2} - \frac{1}{2}
+    \end{gathered}
+\end{equation}
+\\
+\\
+\begin{equation}
+    |\overline{S}-\underline{S}| \underset{n \to \infty}{\longrightarrow} 0 \implies \exists \int_{0}^{1} f dx
+\end{equation}
+\\
+\\
+\begin{equation}
+    \int_0^1 e^{2x} dx = \frac{e^{2x}}{2}\bigg|_0^1 = \frac{e^2}{2} - \frac{1}{2}
+\end{equation}
+\newpage
+\subsection{Погрешность}
+\newpage
+\section{Вывод}
+\end{document}
