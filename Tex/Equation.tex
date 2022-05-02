@@ -81,9 +81,10 @@
     \item Сделать программу, рисующую и вычисляющую интегральные суммы
     \item Расчитать погрешность
 \end{enumerate}
-\newpage
+% \newpage
 \section{Ход работы}
 \subsection{Программа}
+\href{https://github.com/Zombie1995/MathIntegralLaba}{https://github.com/Zombie1995/MathIntegralLaba}
 \begin{center}
     \includegraphics[width=0.35\linewidth]{1}
 \end{center}
@@ -96,7 +97,7 @@
 \begin{center}
     \includegraphics[width=0.35\linewidth]{4}
 \end{center}
-\newpage
+% \newpage
 \subsection{Доказательство существования интеграла}
 \begin{equation}
     f=e^{2x}, x\in[0,1]
@@ -127,8 +128,32 @@
 \begin{equation}
     \int_0^1 e^{2x} dx = \frac{e^{2x}}{2}\bigg|_0^1 = \frac{e^2}{2} - \frac{1}{2}
 \end{equation}
-\newpage
+% \newpage
 \subsection{Погрешность}
-\newpage
+\begin{center}
+    \(R_n = 2e^{2\xi} (x-x_i)^2\), \\
+    \(n = 1\) - степень разложения, \\
+    k - число точек разбиения
+\end{center}
+\begin{equation}
+    \begin{gathered}
+        \int_0^1 e^{2x} dx = \sum\limits_{i=1}^{k-1}\int_{x_i}^{x_{i+1}} e^{2x} dx = \\
+        \sum\limits_{i=1}^{k-1}\int_{x_i}^{x_{i+1}} (e^{2x_i} +2e^{2x_i}(x-x_i) +
+        2e^{2\xi} (x-x_i)^2) dx = \\
+        \sum\limits_{i=1}^{k-1}\int_{x_i}^{x_{i+1}} e^{2x_i} dx + \sum\limits_{i=1}^{k-1}\int_{x_i}^{x_{i+1}} (2e^{2x_i}(x-x_i) + 2e^{2\xi}(x-x_i)^2)=
+        \underline{S} + R \\
+        R = I - \underline{S} = \sum\limits_{i=1}^{k-1}\int_{x_i}^{x_{i+1}} (2e^{2x_i}(x-x_i) + 2e^{2\xi}(x-x_i)^2)
+    \end{gathered}
+\end{equation}
+\begin{center}
+    Для \(\overline{S}\):
+\end{center}
+\begin{equation}
+    R = \sum\limits_{i=1}^{k-1}\int_{x_i}^{x_{i+1}} (2e^{2x_{i+1}}(x-x_{i+1}) + 2e^{2\xi}(x-x_{i+1})^2)
+\end{equation}
+Для больших \(n\) можно отбросить \(R_n\) и тогда погрешность будет выражена в более явном виде (возможно).
+% \newpage
 \section{Вывод}
+Интегральные суммы можно использовать для приближенного вычисления интеграла. \\
+(Вспомнил Тейлора, хороший был мужик. Интегральные суммы вообще прикольные.)
 \end{document}

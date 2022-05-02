@@ -699,7 +699,6 @@ INPUT C:\Users\Egor\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\Egor\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\Egor\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT Equation.toc
-INPUT C:\Users\Egor\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Egor\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1440.tfm
 INPUT .\img\\1.png
 INPUT img\\1.png
@@ -713,6 +712,7 @@ INPUT .\img\\2.png
 INPUT .\img\\2.png
 INPUT .\img\\2.png
 INPUT .\img\\2.png
+INPUT C:\Users\Egor\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\img\\3.png
 INPUT img\\3.png
 INPUT .\img\\3.png

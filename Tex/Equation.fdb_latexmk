@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1651527785 "c:/VisualStudioProjects/MathIntegralLaba/Tex/Equation.tex" "Equation.pdf" "Equation" 1651527793
+["pdflatex"] 1651531385 "c:/VisualStudioProjects/MathIntegralLaba/Tex/Equation.tex" "Equation.pdf" "Equation" 1651531393
   "C:/Users/Egor/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1650674838 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Egor/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1200.pk" 1650458934 29472 2f4667fb6d8a1ebfc566fa4796810966 ""
   "C:/Users/Egor/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk" 1650459255 36852 6867b6ed86bf042fdf49128849b49ffa ""
@@ -113,11 +113,11 @@
   "C:/Users/Egor/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1369148985 8240 21f7ac37aafb6cfeddbb196b8bfd6280 ""
   "C:/Users/Egor/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Egor/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "Equation.aux" 1651527791 2231 14cbf36b387814b467d3a46e15cc069f "pdflatex"
-  "Equation.out" 1651527791 841 f96006c610942265189f750dcf087f00 "pdflatex"
-  "Equation.tex" 1651527782 3880 1740915e8135d6a1598accaa4d8b7ea4 ""
-  "Equation.toc" 1651527791 1270 5faafa88578c2304afaef396eca796a5 "pdflatex"
-  "c:/VisualStudioProjects/MathIntegralLaba/Tex/Equation.tex" 1651527782 3880 1740915e8135d6a1598accaa4d8b7ea4 ""
+  "Equation.aux" 1651531391 2231 447eda98f52683f1610824a2005b0c71 "pdflatex"
+  "Equation.out" 1651531391 841 f96006c610942265189f750dcf087f00 "pdflatex"
+  "Equation.tex" 1651531382 5429 22522044e420fa6aff2c72e923def0b9 ""
+  "Equation.toc" 1651531391 1270 1e39e13978103b74f0f3b9941a6f7f09 "pdflatex"
+  "c:/VisualStudioProjects/MathIntegralLaba/Tex/Equation.tex" 1651531382 5429 22522044e420fa6aff2c72e923def0b9 ""
   "img//1.png" 1651526697 31385 b5e8d91587aa93b654dec3d8b2768920 ""
   "img//2.png" 1651526708 31273 d3cb853845d190f215d08b0f82433360 ""
   "img//3.png" 1651526721 30427 a8f94e74899e4af319fc3fae522b2f43 ""
